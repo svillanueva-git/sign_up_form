@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: ;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s;
+}
+
+.form-panel {
+  flex-direction: column;
+  flex: 2;
+}
+
+.left-panel {
+  flex: 1;
+}
+
+.left-panel:hover {
+  flex: 1.5;
+}
+
+.header,
+.full-body,
+.footer {
+  flex: 1;
+}
+
+.full-body {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #CCC;
+}
+
+.form-columns {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
