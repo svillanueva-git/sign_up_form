@@ -16,7 +16,7 @@
     </section>
 
     <section class="right-panel">
-      <form action="">
+      <form >
 
         <div class="header">
           <h2>Lorem ipsum..</h2>
@@ -43,14 +43,16 @@
               <p>
                 <label for="email">
                   <span>Email: </span>
+                  <input type="email" id="mail" name="useremail" required />
+                  <!-- <span class="error" aria-live="polite"></span> -->
                 </label>
-                <input type="email" id="mail" name="useremail" required />
+                
               </p>
               <p>
                 <label for="pwd">
                   <span>Password: </span>
                 </label>
-                <input type="password" id="pwd" name="password" required pattern="[\w]+"/>
+                <input type="password" id="pwd" name="pwd1" required pattern="[\w-\D]+"/>
               </p>
             </div>
             <div class="body-right">
@@ -70,14 +72,14 @@
                 <label for="confirm-pwd">
                   <span>Confirm: </span>
                 </label>
-                <input type="password" id="confirm-pwd" name="confirm-pwd" required />
+                <input type="password" id="confirm-pwd" name="pwd2" required />
               </p>
             </div>
           </div>
         </div>
   
         <div class="footer">
-          <button type="submit">Create Account</button>
+          <button type="submit" onclick="matchPassword()">Create Account</button>
         </div>
 
       </form>
