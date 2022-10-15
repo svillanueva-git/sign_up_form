@@ -12,83 +12,75 @@
   <div class="container">
 
     <section class="left-panel">
-      <h1>Left Panel</h1>
+      <h1>THE WANDY ARHOL MUSEUM</h1>
     </section>
 
-    <section class="form-panel">
-      <div class="header">
-        <h1>Header</h1>
-      </div>
+    <section class="right-panel">
+      <form action="">
 
-      <div class="full-body">
-        <h1>User information</h1>
-        <p>Required fields are followed by 
-          <strong><span aria-label="required">*</span>
-          </strong>
-        </p>
-
-        <div class="form-columns">
-          
-          <div class="body-left">
-            <p>
-              <label for="first-name">
-                <span>First name: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="text" id="first-name" name="first-name">
-            </p>
-            <p>
-              <label for="email">
-                <span>Email: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="email" id="email" name="useremail">
-            </p>
-            <p>
-              <label for="pwd">
-                <span>Password: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="password" id="pwd" name="password">
-            </p>
-          </div>
-          <div class="body-right">
-            <p>
-              <label for="last-name">
-                <span>Last name: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="text" id="last-name" name="last-name">
-            </p>
-            <p>
-              <label for="phone">
-                <span>Phone: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="tel" id="phone" name="telephone">
-            </p>
-            <p>
-              <label for="confirm-pwd">
-                <span>Confirm: </span>
-                <strong><span aria-label="required">*</span>
-                </strong>
-              </label>
-              <input type="password" id="confirm-pwd" name="confirm-pwd">
-            </p>
+        <div class="header">
+          <h2>Lorem ipsum..</h2>
+          <p>Phasellus efficitur dolor sit amet, consectetur adipiscing elit. Vivamus eget velit lorem. 
+            Morbi eget rhoncus augue, sed tincidunt mauris. Integer aliquam dui ante, non aliquam 
+            mauris venenatis non. Aliquam erat volutpat.</p>
+        </div>
+  
+        <div class="full-body">
+          <h1>User information</h1>
+          <p>Required fields are followed by 
+            <strong><span aria-label="required">*</span>
+            </strong>
+          </p>
+  
+          <div class="body-columns">
+            <div class="body-left">
+              <p>
+                <label for="first-name">
+                  <span>First name: </span>
+                </label>
+                <input type="text" id="first-name" name="first-name" required pattern="[A-Z].[a-z]+" />
+              </p>
+              <p>
+                <label for="email">
+                  <span>Email: </span>
+                </label>
+                <input type="email" id="mail" name="useremail" required />
+              </p>
+              <p>
+                <label for="pwd">
+                  <span>Password: </span>
+                </label>
+                <input type="password" id="pwd" name="password" required pattern="[\w]+"/>
+              </p>
+            </div>
+            <div class="body-right">
+              <p>
+                <label for="last-name">
+                  <span>Last name: </span>
+                </label>
+                <input type="text" id="last-name" name="last-name" required pattern="[A-Z].[a-z]+" />
+              </p>
+              <p>
+                <label for="phone">
+                  <span>Phone: </span>
+                </label>
+                <input type="tel" id="phone" name="telephone" required maxlength="10"/>
+              </p>
+              <p>
+                <label for="confirm-pwd">
+                  <span>Confirm: </span>
+                </label>
+                <input type="password" id="confirm-pwd" name="confirm-pwd" required />
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+  
+        <div class="footer">
+          <button type="submit">Create Account</button>
+        </div>
 
-      <div class="footer">
-        <p>
-          <button type="submit">Sign Up</button>
-        </p>
-      </div>
+      </form>
     </section>
 
   </div>

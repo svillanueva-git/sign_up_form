@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: ;
+  /* font-family: ; */
 }
 
 .container {
@@ -20,35 +20,131 @@ section {
   transition: all .5s;
 }
 
-.form-panel {
+.right-panel {
   flex-direction: column;
   flex: 2;
+
+  border: 1px solid blue;
+  background-color: white;
+  opacity: .9;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .left-panel {
   flex: 1;
+  border: 1px solid red;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  /* background: url('/img/roan-lavery.jpg') #b0d4b1;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply; */
 }
 
-.left-panel:hover {
+/* .left-panel:hover {
   flex: 1.5;
-}
+} */
 
 .header,
 .full-body,
 .footer {
   flex: 1;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.full-body {
-  margin: 0 auto;
-  width: 100%;
-  padding: 1em;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
   border: 1px solid #CCC;
 }
 
-.form-columns {
+.full-body {
+  border: 1px solid #CCC;
+}
+
+.body-columns {
   height: 100%;
+  width:90%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: #5D6063;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
 }
+
+.body-left p,
+.body-right p {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.body-left,
+.body-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: right;
+}
+
+input {
+  height: 3ch;
+  width: 160px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 2px;
+
+  appearance: none;
+}
+
+input:valid {
+  border: 2px solid rgb(150, 189, 150);
+}
+
+/* input:invalid {
+  border: 2px solid rgb(224, 164, 164);
+} */
+
+input.invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 5px #a8a8a8;
+}
+
+.footer {
+  border: 1px solid #CCC;
+}
+
+button {
+  font: regular .8em sans-serif;
+  color: #FFFFFF;
+
+  border: none;
+  border-radius: 5px;
+  background: none;
+  background-color: #a8a8a8;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
