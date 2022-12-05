@@ -32,8 +32,8 @@
             </strong>
           </p>
   
-          <div class="body-columns">
-            <div class="body-left">
+          <div class="body-rows">
+            <div class="first-row">
               <p>
                 <label for="first-name">
                   <span>First name: </span>
@@ -41,32 +41,33 @@
                 <input type="text" id="first-name" name="first-name" required pattern="[A-Z].[a-z]+" />
               </p>
               <p>
+                <label for="last-name">
+                  <span>Last name: </span>
+                </label>
+                <input type="text" id="last-name" name="last-name" required pattern="[A-Z].[a-z]+" />                
+              </p>
+            </div>
+            <div class="second-row">
+              <p>
                 <label for="email">
                   <span>Email: </span>
                   <input type="email" id="mail" name="useremail" required />
                   <!-- <span class="error" aria-live="polite"></span> -->
                 </label>
-                
-              </p>
-              <p>
-                <label for="pwd">
-                  <span>Password: </span>
-                </label>
-                <input type="password" id="pwd" name="pwd1" required pattern="[\w-\D]+"/>
-              </p>
-            </div>
-            <div class="body-right">
-              <p>
-                <label for="last-name">
-                  <span>Last name: </span>
-                </label>
-                <input type="text" id="last-name" name="last-name" required pattern="[A-Z].[a-z]+" />
               </p>
               <p>
                 <label for="phone">
                   <span>Phone: </span>
                 </label>
                 <input type="tel" id="phone" name="telephone" required maxlength="10"/>
+              </p>
+            </div>
+            <div class="third-row">
+              <p>
+                <label for="pwd">
+                  <span>Password: </span>
+                </label>
+                <input type="password" id="pwd" name="pwd1" required pattern="[\w-\D]+"/>
               </p>
               <p>
                 <label for="confirm-pwd">
